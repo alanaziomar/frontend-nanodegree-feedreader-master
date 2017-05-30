@@ -61,7 +61,7 @@ $(function() {
          * hiding/showing of the menu element.
          */
          it('is hidden by default', function() {
-                     expect($(document.body).hasClass('menu-hidden')).toBe(true);
+                     expect($('body').hasClass('menu-hidden')).toBeTruthy();
           });
          /* TODO: Write a test that ensures the menu changes
           * visibility when the menu icon is clicked. This test
@@ -70,9 +70,9 @@ $(function() {
           */
           it('toggles visibility on icon click', function() {
                      $('a.menu-icon-link').click();
-                     expect(document.body.className).not.toContain('menu-hidden');
+                      expect($('body').hasClass('menu-hidden')).toBeFalsy();
                      $('a.menu-icon-link').click();
-                     expect(document.body.className).toContain('menu-hidden');
+                      expect($('body').hasClass('menu-hidden')).toBeTruthy();
                  });
           });
     /* TODO: Write a new test suite named "Initial Entries" */
@@ -109,8 +109,9 @@ $(function() {
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+           //Test to ensure that content are different
          it('content changes', function() {
-             expect(oldfeed).not.toBe(newFeed);
+             expect(oldfeed != newFeed ).toBe(true);
 
          });
      });
