@@ -1,12 +1,12 @@
-###Feed Reader Testing Project###
+**Feed Reader Testing Project**
 
 Testing the Feed Reader app using Javascript testing framework Jasmine.
 
-###Reference###
+**Reference**
 
 2.1 Jasmine documentation
 
-###step to test app in loacl  server:###
+**step to test app in loacl  server:**
 
 1. Click "Clone in Desktop" / "Download ZIP"
 2. Open the folder
@@ -19,7 +19,7 @@ Testing the Feed Reader app using Javascript testing framework Jasmine.
 
 
 
-###Tests###
+**Tests**
 
 **RSS Feeds**
 *are defined*
